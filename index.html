@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <title>Links | Vitor Mezzalira</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .interface {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to right, #1282a2, #12AAD6);
+
+            padding-top: 4rem;
+
+            flex-direction: column;
+        }
+
+        .profile-name,
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        .profile-image {
+            margin: 0 auto 1rem auto;
+
+            width: 7rem;
+            height: 7rem;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+        .profile-name {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .links ul {
+            margin: auto;
+            flex-direction: column;
+            max-width: 40rem;
+            list-style-type: none;
+        }
+
+        .links li {
+            margin-bottom: 1.5rem;
+            height: 4rem;
+            background-color: #034078;
+        }
+        .links li a{
+            text-decoration: none;
+        }
+        .links li a div{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fefcfb;
+        }
+
+        .links li:hover{
+            background-color: transparent;
+        }
+        .links li a div:hover{
+            color: #034078;
+            font-size: 1.25rem;
+            transition: font-size .1s;
+            border: .25rem solid #034078;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="interface">
+
+        <div class="profile-image">
+            <img src="" alt="">
+        </div>
+
+        <div class="profile-name">
+            <h1>Vitor Mezzalira</h1>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="https://www.instagram.com/vitomezz"><div>Instagram</div></a></li>
+                <li><a href="https://www.linkedin.com/in/vitor-mezzalira-7614061b3"><div>Linkedin</div></a></li>
+                <li><a href="https://github.com/VitorAntonioMezzalira"><div>Github</div></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+
+</html>
