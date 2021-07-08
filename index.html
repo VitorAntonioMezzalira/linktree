@@ -12,6 +12,14 @@
 
     <title>Links | Vitor Mezzalira</title>
     <style>
+
+        :root{
+            --dark-blue: #034078;
+            --light-blue-primary: #22a0c2;
+            --light-blue-secondary: #45d7ff;
+            --gray-white: #fefcfb;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -21,9 +29,9 @@
         .interface {
             width: 100vw;
             height: 100vh;
-            background-image: linear-gradient(to right, #1282a2, #12AAD6);
+            background-image: linear-gradient(to right, var(--light-blue-primary), var(--light-blue-secondary));
 
-            padding-top: 4rem;
+            padding: 4rem 2rem 0 2rem;
 
             flex-direction: column;
         }
@@ -32,6 +40,7 @@
         a {
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
+            color: var(--dark-blue);
         }
 
         .profile-image {
@@ -39,13 +48,17 @@
 
             width: 7rem;
             height: 7rem;
-            background-color: #ffffff;
             border-radius: 50%;
+            overflow: hidden;
+        }
+        .profile-image img{
+            width: 100%;
         }
 
         .profile-name {
             text-align: center;
-            margin-bottom: 4rem;
+            font-size: .75rem;
+            margin-bottom: 3rem;
         }
 
         .links ul {
@@ -54,11 +67,10 @@
             max-width: 40rem;
             list-style-type: none;
         }
-
         .links li {
             margin-bottom: 1.5rem;
-            height: 4rem;
-            background-color: #034078;
+            height: 3.5rem;
+            background-color: var(--dark-blue);
         }
         .links li a{
             text-decoration: none;
@@ -70,7 +82,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fefcfb;
+            color: var(--gray-white);
         }
 
         .links li:hover{
@@ -80,7 +92,7 @@
             color: #034078;
             font-size: 1.25rem;
             transition: font-size .1s;
-            border: .25rem solid #034078;
+            border: .25rem solid var(--dark-blue);
         }
 
     </style>
@@ -91,7 +103,7 @@
     <div class="interface">
 
         <div class="profile-image">
-            <img src="" alt="">
+            <img src="https://avatars.githubusercontent.com/u/62727984?v=4" alt="profile image">
         </div>
 
         <div class="profile-name">
